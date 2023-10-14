@@ -39,20 +39,28 @@
         }
 
         #language {
-  display: none;
-}
+            display: none;
+        }
+
+        .spinner-border {
+            display: none;
+            margin: 0 auto;
+        }
     </style>
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="row header">
+        <div class="row header" id="header">
             <div class="col-6">
                 <div id="staticDescription"></div>
             </div>
             <div class="col-6 text-right" id="language">
-                <span class="lang-flag" onclick="switchLanguage('english')">🇺🇸</span>
-                <span class="lang-flag" onclick="switchLanguage('hebrew')">🇮🇱</span>
+                <span class="lang-flag" onclick="switchLanguage(ENGLISH)">🇺🇸</span>
+                <span class="lang-flag" onclick="switchLanguage(HEBREW)">🇮🇱</span>
+            </div>
+            <div id="spinner" class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
             </div>
         </div>
         <div class="row grid-container" id="grid"></div>
@@ -75,29 +83,75 @@
     </div>
 
     <script>
+        const HEBREW = "hebrew"
+        const ENGLISH = "english"
         // Function to fetch data based on language
         function fetchData(language) {
-            const url = `https://october7gov.s3.amazonaws.com/data/${language}.json`;
+            const url = `https://october-seven-gov.s3.amazonaws.com/data/${language}.json`;
+            setStaticDescription(language)
+
+            document.getElementById('spinner').style.display = 'block';
 
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
                     populateData(data);
+                    document.getElementById('spinner').style.display = 'none';
                 });
         }
 
+        function setStaticDescription(language) {
+            const staticDescriptionLabel = document.getElementById('staticDescription');
+            const staticModelLabel = document.getElementById('statusModalLabel');
+            const header = document.getElementById('header');
+
+            const staticDescription = {
+                [ENGLISH]: "Your English Static Description",
+                [HEBREW]: "Your Hebrew Static Description"
+            };
+            staticModel = {
+                [ENGLISH]: "Your English Static Description",
+                [HEBREW]: "Your Hebrew Static Description"
+            }
+            staticDescriptionLabel.textContent = staticDescription[language];
+            staticModelLabel.textContent = staticModel[language]
+
+            if (language === HEBREW) {
+                header.style.direction = 'rtl';
+                header.style.textAlign = 'right';
+                staticModelLabel.style.direction = 'rtl';
+                staticModelLabel.style.textAlign = 'right';
+            } else {
+                header.style.direction = 'ltr';
+                header.style.textAlign = 'left';
+                staticModelLabel.style.direction = 'ltr';
+                staticModelLabel.style.textAlign = 'left';
+            }
+        }
         function populateData(data) {
             const grid = document.getElementById('grid');
             grid.innerHTML = '';
 
+            // Sort those who got resigned and then by those who has a special job.
+            data.sort((a, b) => {
+                if (a.resigned && !b.resigned) return -1;
+                if (!a.resigned && b.resigned) return 1;
+                if (a.hasJob && !b.hasJob) return -1;
+                if (!a.hasJob && b.hasJob) return 1;
+                return 0;
+            });
             data.forEach(person => {
                 const personDiv = document.createElement('div');
+                personDiv.onclick = function () {
+                    showStatusPopup(person.history)
+                }
                 personDiv.className = 'person col-md-3';
+                const imageStyle = person.resigned ? 'filter: grayscale(100%);' : '';
                 personDiv.innerHTML = `
-                    <img src="${person.image}" alt="${person.name}" onclick="window.open('${person.site}', '_blank')">
+                    <img src="${person.image}" alt="${person.name}" style="${imageStyle}">
                     <span>${person.name}</span>
                     <span>${person.role}</span>
-                    <span onclick="showStatusPopup('${person.history}')">${person['current-status']}</span>
+                    <span>${person['current-status']}</span>
                 `;
                 grid.appendChild(personDiv);
             });
@@ -109,22 +163,27 @@
             setStaticDescription(language);
         }
 
-        function setStaticDescription(language) {
-            const description = {
-                english: "Your English Static Description",
-                hebrew: "Your Hebrew Static Description"
-            };
-            document.getElementById('staticDescription').textContent = description[language];
-        }
-
         function showStatusPopup(status) {
-            document.getElementById('statusModalBody').innerHTML = marked.parse(status);
+            const modalBody = document.getElementById('statusModalBody');
+            modalBody.innerHTML = marked.parse(status);
+
+            const params = new URLSearchParams(window.location.search);
+            const language = params.get('language') || 'hebrew';
+
+            if (language === HEBREW) {
+                modalBody.style.direction = 'rtl';
+                modalBody.style.textAlign = 'right';
+            } else {
+                modalBody.style.direction = 'ltr';
+                modalBody.style.textAlign = 'left';
+            }
+
             $('#statusModal').modal('show');
         }
 
         document.addEventListener('DOMContentLoaded', () => {
             const params = new URLSearchParams(window.location.search);
-            const language = params.get('language') || 'english';
+            const language = params.get('language') || HEBREW;
             fetchData(language)
             setStaticDescription(language);
         });

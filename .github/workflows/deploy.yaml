@@ -43,8 +43,8 @@ jobs:
     - name: Upload to S3
       run: |
         ~/scripts/build.sh
-        aws s3 sync --delete ~/.site s3://october-seven-gov/
-        aws cloudfront create-invalidation --distribution-id $CF_DISTRIBUTION_ID --paths "/*"
+        aws s3 sync --delete .site s3://october-seven-gov/
+        # aws cloudfront create-invalidation --distribution-id $CF_DISTRIBUTION_ID --paths "/*"
       env:
         CF_DISTRIBUTION_ID: ${{ vars.CF_DISTRIBUTION_ID_BUILDING_SERVERLESS_USING_AC }}
 
