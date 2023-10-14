@@ -1,0 +1,666 @@
+[
+    {
+        "image": "assets/almog-cohen.png",
+        "name": "אלמוג כהן",
+        "role": "חבר כנסת",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%9E%D7%95%D7%92_%D7%9B%D7%94%D7%9F_(%D7%97%D7%91%D7%A8_%D7%94%D7%9B%D7%A0%D7%A1%D7%AA)"
+    },
+    {
+        "image": "assets/amichai-eliyau.png",
+        "name": "עמיחי אליהו",
+        "role": "שר המורשת",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%90%D7%9C%D7%99%D7%94%D7%95"
+    },
+    {
+        "image": "assets/amichai-shikli.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/amir-ochana.jpeg",
+        "name": "אמיר אוחנה",
+        "role": "יושב ראש הכנסת",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%90%D7%9E%D7%99%D7%A8_%D7%90%D7%95%D7%97%D7%A0%D7%94"
+    },
+    {
+        "image": "assets/amit-halevi.png",
+        "name": "עמית הלוי",
+        "role": "חבר כנסת",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%AA_%D7%94%D7%9C%D7%95%D7%99"
+    },
+    {
+        "image": "assets/ariel-boso.png",
+        "name": "אוריאל בוסו",
+        "role": "שר הבריאות",
+        "current-status": "מונה לשר הבריאות",
+        "יhistory": "* 12.10.2023 - מנויו כשר הבריאות אושר בכנסת",
+        "site": "https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A8%D7%99%D7%90%D7%9C_%D7%91%D7%95%D7%A1%D7%95"
+    },
+    {
+        "image": "assets/ariel-klener.png",
+        "name": "אריאל קלנר",
+        "role": "חבר כנסת",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%99%D7%90%D7%9C_%D7%A7%D7%9C%D7%A0%D7%A8"
+    },
+    {
+        "image": "assets/arye-machluf-deri.png",
+        "name": "אריה מכלוף דרעי",
+        "role": "חבר כנסת",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%99%D7%94_%D7%93%D7%A8%D7%A2%D7%99"
+    },
+    {
+        "image": "assets/avi-dichter.png",
+        "name": "אבי דיכטר",
+        "role": "שר החקלאות",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%99_%D7%93%D7%99%D7%9B%D7%98%D7%A8"
+    },
+    {
+        "image": "assets/avi-maoz.png",
+        "name": "אבי מעוז",
+        "role": "סגן שר במשרד ראש הממשלה",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/avihai-avrham-boaron.png",
+        "name": "אביחי בוארון",
+        "role": "",
+        "current-status": "סיים את תפקידו כחבר כנסת",
+        "יhistory": "* 12.10.2023 - שרת ההסברה, גלית דיסטל אטבריאן, הודיעה על התפטרותה מהתפקיד וצפויה לחזור לכהן כחבר כנסת. במסגרת החוק הנורווגי בוארון צפוי לסיים את תפקידו",
+        "site": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%99%D7%97%D7%99_%D7%91%D7%95%D7%90%D7%A8%D7%95%D7%9F"
+    },
+    {
+        "image": "assets/avrahm-bezalhel.png",
+        "name": "אברהם בצאלאל",
+        "role": "יושב ראש הוועדה לצמצום הפערים החברתיים בפריפריה",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%91%D7%A6%D7%9C%D7%90%D7%9C"
+    },
+    {
+        "image": "assets/bezalel-smotriz.png",
+        "name": "בצלאל סמוטריץ",
+        "role": "שר האוצר ושר במשרד הביטחון",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%91%D7%A6%D7%9C%D7%90%D7%9C_%D7%A1%D7%9E%D7%95%D7%98%D7%A8%D7%99%D7%A5%27"
+    },
+    {
+        "image": "assets/binyamin-netanyahu.png",
+        "name": "בנימין נתניהו",
+        "role": "ראש הממשלה",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%9F_%D7%A0%D7%AA%D7%A0%D7%99%D7%94%D7%95"
+    },
+    {
+        "image": "assets/boaz-bismot.png",
+        "name": "בועז ביסמוט",
+        "role": "יטשב ראש הוועדה לענייני התמכרויות, סמים ואתגרי הצעירים בישראל",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%91%D7%95%D7%A2%D7%96_%D7%91%D7%99%D7%A1%D7%9E%D7%95%D7%98"
+    },
+    {
+        "image": "assets/dan-iluz.png",
+        "name": "דן אילוז",
+        "role": "חבר כנסת",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%93%D7%9F_%D7%90%D7%99%D7%9C%D7%95%D7%96"
+    },
+    {
+        "image": "assets/dani-danon.png",
+        "name": "דני דנון",
+        "role": "חבר כנסת",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%93%D7%A0%D7%99_%D7%93%D7%A0%D7%95%D7%9F"
+    },
+    {
+        "image": "assets/david-amsalem.png",
+        "name": "דוד אמסלם",
+        "role": "השר לשיתוף פעולה אזורי, שר במשרד המשפטים והשר המקשר בין הממשלה לכנסת",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93%D7%99_%D7%90%D7%9E%D7%A1%D7%9C%D7%9D"
+    },
+    {
+        "image": "assets/david-bitan.png",
+        "name": "דוד ביטן",
+        "role": "יושב ראש ועדת הכלכלה",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%91%D7%99%D7%98%D7%9F"
+    },
+    {
+        "image": "assets/eli-cohen.png",
+        "name": "אלי כהן",
+        "role": "שר החוץ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99_%D7%9B%D7%94%D7%9F_(%D7%A4%D7%95%D7%9C%D7%99%D7%98%D7%99%D7%A7%D7%90%D7%99,_1972)"
+    },
+    {
+        "image": "assets/eli-dalal.png",
+        "name": "אלי דלל",
+        "role": "יושב-ראש הוועדה המיוחדת לזכויות הילד",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%94%D7%95_%D7%93%D7%9C%D7%9C"
+    },
+    {
+        "image": "assets/eliyau-bruchi.png",
+        "name": "אליהו ברוכי",
+        "role": "חבר כנסת",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%94%D7%95_%D7%91%D7%A8%D7%95%D7%9B%D7%99"
+    },
+    {
+        "image": "assets/eliyau-revivo.png",
+        "name": "אליהו רביבו",
+        "role": "יושב ראש הועדה המיוחדת לעובדים זרים",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%94%D7%95_%D7%A8%D7%91%D7%99%D7%91%D7%95"
+    },
+    {
+        "image": "assets/erez-malol.png",
+        "name": "ארז מלול",
+        "role": "חבר כנסת",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%96_%D7%9E%D7%9C%D7%95%D7%9C"
+    },
+    {
+        "image": "assets/galit-distel-atberian.png",
+        "name": "גלית דיסטל-אטבריאן",
+        "role": "חברת כנסת",
+        "current-status": "התפטרה מתפקידה כשרת ההסברה",
+        "יhistory": "* 12.10.2023 - התפטרה מתפקידה כשרת ההסברה",
+        "site": "https://he.wikipedia.org/wiki/%D7%92%D7%9C%D7%99%D7%AA_%D7%93%D7%99%D7%A1%D7%98%D7%9C-%D7%90%D7%98%D7%91%D7%A8%D7%99%D7%90%D7%9F"
+    },
+    {
+        "image": "assets/gila-gamliel.png",
+        "name": "גילה גמליאל",
+        "role": "שרת המודיעין",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%92%D7%99%D7%9C%D7%94_%D7%92%D7%9E%D7%9C%D7%99%D7%90%D7%9C"
+    },
+    {
+        "image": "assets/haim-biton.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/haim-katz.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/hanoch-dov-milbizki.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/hava-ety-ataya.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/idit-silman.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/israel-ichler.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/israel-katz.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/itamar-ben-gvir.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/izak-goldknof.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/izak-shimon-vaserlof.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/izhak-kroizer.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/izhak-zehev-pindrus.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/ketty-katrin-shitrit.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/limor-son-har-melech.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/machluf-miki-zohar.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/mai-golan.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/meir-porush.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/michael-malkieli.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/michal-miriam-voldinger.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/miri-miriam-regev.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/moshe-abutbul.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/moshe-arbel.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/moshe-gafni.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/moshe-pesel.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/moshe-rot.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/moshe-saada.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/moshe-solomon.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/nir-barket.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/nisim-vatori.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/ofir-akonis.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/ofir-katz.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/amichai-eliyau.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/ofir-sofer.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/ohad-tal.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/osher-shkalim.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/sason-sasi-gueta.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/shalum-danino.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/shimha-rotman.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/shlomo-kery.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/simon-moshiashvili.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/tali-gotlib.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/uri-makleb.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/urit-strok.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/yaacov-tesler.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/yaakov-asher.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/yaakov-margi.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/yariv-levin.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/yinon-azulai.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/yoav-ben-zor.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/yoav-galant.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/yoav-kish.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/yonatan-misriki.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/yosef-tayeb.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/yuli-yuel-edelstein.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/zaga-zangesh-malko.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/zvi-yedidya-shukut.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    },
+    {
+        "image": "assets/zvika-fogel.png",
+        "name": "עמיחי שיקלי",
+        "role": "שר התפוצות והמאבק באנטישמיות והשר לשוויון חברתי ",
+        "current-status": "",
+        "יhistory": "",
+        "site": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A9%D7%99%D7%A7%D7%9C%D7%99"
+    }
+]

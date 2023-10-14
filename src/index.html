@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>October 7th</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+
+    <style>
+        .header {
+            margin: 20px 0;
+        }
+
+        .grid-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .person img {
+            width: 33%;
+            cursor: pointer;
+        }
+
+        .person span {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .lang-flag {
+            font-size: 24px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        #language {
+  display: none;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-6">
+                <div id="staticDescription"></div>
+            </div>
+            <div class="col-6 text-right" id="language">
+                <span class="lang-flag" onclick="switchLanguage('english')">🇺🇸</span>
+                <span class="lang-flag" onclick="switchLanguage('hebrew')">🇮🇱</span>
+            </div>
+        </div>
+        <div class="row grid-container" id="grid"></div>
+    </div>
+    <!-- Status Modal -->
+    <div class="modal fade" id="statusModal" tabindex="-1" aria-labelledby="statusModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="statusModalLabel">Status</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="statusModalBody">
+                    <!-- Status will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to fetch data based on language
+        function fetchData(language) {
+            const url = `https://october7gov.s3.amazonaws.com/data/${language}.json`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    populateData(data);
+                });
+        }
+
+        function populateData(data) {
+            const grid = document.getElementById('grid');
+            grid.innerHTML = '';
+
+            data.forEach(person => {
+                const personDiv = document.createElement('div');
+                personDiv.className = 'person col-md-3';
+                personDiv.innerHTML = `
+                    <img src="${person.image}" alt="${person.name}" onclick="window.open('${person.site}', '_blank')">
+                    <span>${person.name}</span>
+                    <span>${person.role}</span>
+                    <span onclick="showStatusPopup('${person.history}')">${person['current-status']}</span>
+                `;
+                grid.appendChild(personDiv);
+            });
+        }
+
+        function switchLanguage(language) {
+            window.location.search = `?language=${language}`;
+            fetchData(language)
+            setStaticDescription(language);
+        }
+
+        function setStaticDescription(language) {
+            const description = {
+                english: "Your English Static Description",
+                hebrew: "Your Hebrew Static Description"
+            };
+            document.getElementById('staticDescription').textContent = description[language];
+        }
+
+        function showStatusPopup(status) {
+            document.getElementById('statusModalBody').innerHTML = marked.parse(status);
+            $('#statusModal').modal('show');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const language = params.get('language') || 'english';
+            fetchData(language)
+            setStaticDescription(language);
+        });
+    </script>
+</body>
+
+</html>
