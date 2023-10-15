@@ -46,6 +46,7 @@
             display: none;
             margin: 0 auto;
         }
+
     </style>
 </head>
 
@@ -85,8 +86,34 @@
     <script>
         const HEBREW = "hebrew"
         const ENGLISH = "english"
-        // Function to fetch data based on language
-        function fetchData(language) {
+        const LANGUAGE = {
+            header: {
+                [HEBREW]: "כותר בעברית",
+                [ENGLISH]: "Header in English"
+            },
+            modalHeader: {
+                [HEBREW]: "פרטים נוספים",
+                [ENGLISH]: "Details"
+            },
+            wikipedia: {
+                [HEBREW]: "וויקיפדיה",
+                [ENGLISH]: "Wikipedia"
+            }
+        }
+        const globalState = {
+            language: HEBREW
+        };
+        function setRtl(language, component) {
+            if (language === HEBREW) {
+                component.style.direction = 'rtl';
+                component.style.textAlign = 'right';
+            } else {
+                component.style.direction = 'ltr';
+                component.style.textAlign = 'left';
+            }
+        }
+        function fetchData() {
+            const language = globalState.language
             const url = `https://october-seven-gov.s3.amazonaws.com/data/${language}.json`;
             setStaticDescription(language)
 
@@ -100,33 +127,18 @@
                 });
         }
 
-        function setStaticDescription(language) {
+        function setStaticDescription() {
+            const language = globalState.language
             const staticDescriptionLabel = document.getElementById('staticDescription');
             const staticModelLabel = document.getElementById('statusModalLabel');
             const header = document.getElementById('header');
 
-            const staticDescription = {
-                [ENGLISH]: "Your English Static Description",
-                [HEBREW]: "Your Hebrew Static Description"
-            };
-            staticModel = {
-                [ENGLISH]: "Your English Static Description",
-                [HEBREW]: "Your Hebrew Static Description"
-            }
-            staticDescriptionLabel.textContent = staticDescription[language];
-            staticModelLabel.textContent = staticModel[language]
 
-            if (language === HEBREW) {
-                header.style.direction = 'rtl';
-                header.style.textAlign = 'right';
-                staticModelLabel.style.direction = 'rtl';
-                staticModelLabel.style.textAlign = 'right';
-            } else {
-                header.style.direction = 'ltr';
-                header.style.textAlign = 'left';
-                staticModelLabel.style.direction = 'ltr';
-                staticModelLabel.style.textAlign = 'left';
-            }
+            staticDescriptionLabel.textContent = LANGUAGE.header[language];
+            staticModelLabel.textContent = LANGUAGE.modalHeader[language]
+
+            setRtl(language, header)
+            setRtl(language, staticModelLabel)
         }
         function populateData(data) {
             const grid = document.getElementById('grid');
@@ -136,6 +148,8 @@
             data.sort((a, b) => {
                 if (a.resigned && !b.resigned) return -1;
                 if (!a.resigned && b.resigned) return 1;
+                if (a.king && !b.king) return -1;
+                if (!a.king && b.king) return 1;
                 if (a.hasJob && !b.hasJob) return -1;
                 if (!a.hasJob && b.hasJob) return 1;
                 return 0;
@@ -143,14 +157,16 @@
             data.forEach(person => {
                 const personDiv = document.createElement('div');
                 personDiv.onclick = function () {
-                    showStatusPopup(person.history)
+                    showStatusPopup(person.wikipedia, person.context)
                 }
                 personDiv.className = 'person col-md-3';
                 const imageStyle = person.resigned ? 'filter: grayscale(100%);' : '';
+                const kingIcon = person.king ? '👑' : '';
+
                 personDiv.innerHTML = `
                     <img src="${person.image}" alt="${person.name}" style="${imageStyle}">
                     <span>${person.name}</span>
-                    <span>${person.role}</span>
+                    <span>${person.role} ${kingIcon}</span>
                     <span>${person['current-status']}</span>
                 `;
                 grid.appendChild(personDiv);
@@ -159,24 +175,17 @@
 
         function switchLanguage(language) {
             window.location.search = `?language=${language}`;
-            fetchData(language)
-            setStaticDescription(language);
+            globalState.language = language
+            fetchData()
+            setStaticDescription();
         }
 
-        function showStatusPopup(status) {
+        function showStatusPopup(wikipediaLink, context) {
+            const language = globalState.language
             const modalBody = document.getElementById('statusModalBody');
-            modalBody.innerHTML = marked.parse(status);
-
-            const params = new URLSearchParams(window.location.search);
-            const language = params.get('language') || 'hebrew';
-
-            if (language === HEBREW) {
-                modalBody.style.direction = 'rtl';
-                modalBody.style.textAlign = 'right';
-            } else {
-                modalBody.style.direction = 'ltr';
-                modalBody.style.textAlign = 'left';
-            }
+            const text = `${context}\n* [${LANGUAGE.wikipedia[language]}](${wikipediaLink})`
+            modalBody.innerHTML = marked.parse(text);
+            setRtl(language, modalBody)
 
             $('#statusModal').modal('show');
         }
@@ -184,8 +193,9 @@
         document.addEventListener('DOMContentLoaded', () => {
             const params = new URLSearchParams(window.location.search);
             const language = params.get('language') || HEBREW;
-            fetchData(language)
-            setStaticDescription(language);
+            globalState.language = language
+            fetchData()
+            setStaticDescription();
         });
     </script>
 </body>
